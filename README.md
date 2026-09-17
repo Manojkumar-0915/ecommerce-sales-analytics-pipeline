@@ -70,7 +70,7 @@ The project includes an interactive one-page Power BI dashboard for analyzing e-
 
 ### Dashboard Preview
 
-![E-Commerce Sales & Customer Analytics Dashboard](./Dashboard.png)
+![E-Commerce Sales & Customer Analytics Dashboard](https://raw.githubusercontent.com/Manojkumar-0915/ecommerce-sales-analytics-pipeline/master/Dashboard.png)
 
 ### Key KPIs
 
