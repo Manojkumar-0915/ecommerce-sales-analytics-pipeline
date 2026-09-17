@@ -1,57 +1,63 @@
-# E-Commerce Sales & Customer Analytics Pipeline
+# 🛒 E-Commerce Sales & Customer Analytics Pipeline
 
-An end-to-end Data Analytics ETL pipeline that extracts e-commerce data from live REST APIs, transforms and validates the data using Python, loads it into a MySQL Star Schema, and connects the data model to Power BI for interactive business analytics.
+An end-to-end Data Analytics ETL project that extracts e-commerce data from live REST APIs, transforms the data using Python and Pandas, loads it into a MySQL Star Schema, and connects the data model to Power BI for interactive business analytics.
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates a complete data analytics workflow:
+This project demonstrates a complete data analytics workflow from data extraction to business reporting.
 
-**Live REST APIs → Python Extraction → Data Transformation → MySQL Star Schema → Power BI → Business Insights**
+### Workflow
 
-The pipeline processes product, customer, and sales data from multiple API endpoints and converts the raw API data into an analytics-ready relational data model.
+**Live REST APIs → Python ETL → MySQL Star Schema → Power BI → Business Insights**
+
+The pipeline extracts product, customer, and sales data from multiple REST API endpoints, transforms the raw JSON data into structured datasets, stores the data in MySQL, and uses Power BI to create an interactive one-page analytics dashboard.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Project Architecture
 
 ```text
-                 ┌─────────────────────┐
-                 │    DummyJSON APIs   │
-                 │                     │
-                 │  Products           │
-                 │  Users              │
-                 │  Carts              │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │  Python Extraction │
-                 │      requests      │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │ Data Transformation │
-                 │      Pandas         │
-                 │ Validation/Cleaning │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │       MySQL        │
-                 │    Star Schema     │
-                 │                     │
-                 │ dim_product         │
-                 │ dim_customer        │
-                 │ fact_sales          │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │      Power BI      │
-                 │   Data Modeling    │
-                 │       DAX          │
-                 │    Dashboard       │
-                 └─────────────────────┘
+┌─────────────────────────────┐
+│       DummyJSON APIs        │
+│                             │
+│  Products | Users | Carts   │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│       Python Extraction     │
+│                             │
+│  Requests + REST APIs       │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│      Data Transformation    │
+│                             │
+│  Pandas                     │
+│  Cleaning                   │
+│  Restructuring              │
+│  Data Preparation            │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│            MySQL            │
+│                             │
+│        Star Schema          │
+│                             │
+│  dim_product                │
+│  dim_customer               │
+│  fact_sales                 │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│          Power BI           │
+│                             │
+│  Data Model + DAX           │
+│  KPIs + Interactive Charts  │
+│  One-Page Dashboard         │
+└─────────────────────────────┘
