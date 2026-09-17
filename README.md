@@ -61,3 +61,35 @@ The pipeline extracts product, customer, and sales data from multiple REST API e
 │  KPIs + Interactive Charts  │
 │  One-Page Dashboard         │
 └─────────────────────────────┘
+
+---
+
+## 📊 Power BI Dashboard
+
+The project includes an interactive one-page Power BI dashboard for analyzing e-commerce sales and customer performance.
+
+### Dashboard Preview
+
+![E-Commerce Sales & Customer Analytics Dashboard](./Dashboard.png)
+
+### Key KPIs
+
+- Total Sales
+- Total Quantity
+- Total Orders
+- Average Order Value
+- Total Customers
+
+### Visualizations
+
+- Sales by Category
+- Top 10 Products by Sales
+- Sales by Gender
+- Sales by State
+- Top Customers by Sales and Orders
+
+### Interactive Filters
+
+- Category
+- Gender
+- State
